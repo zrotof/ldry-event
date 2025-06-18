@@ -1,0 +1,54 @@
+<div class="hero-banner">
+    <img ngSrc="/img/estimate/hero.jpg" fill priority>
+    <div class="content my-container">
+        <form [formGroup]="estimateForm">
+            <h1>Recevez un dévis pour vos évênements gratuitement</h1>
+            <div class="field">
+                <label>Type d'évênement </label>
+    <p-select formControlName="selectedEvent" [options]="eventTypes" optionLabel="label" placeholder="Sélectionner un type d'évênement" class="w-full md:w-56" />
+                <div class="form-error">
+                    @if (estimateForm.get('place')?.errors?.['required'] && isFormSubmitted) {
+                    <span>Entrez l'adresse mail</span>
+                    }
+                </div>
+            </div>
+            <div class="field">
+                <label>Lieu </label>
+                <input type="text" pInputText formControlName="place" placeholder="Renseignez le lieu de l'évênement" />
+                <div class="form-error">
+                    @if (estimateForm.get('place')?.errors?.['required'] && isFormSubmitted) {
+                    <span>Entrez l'adresse mail</span>
+                    }
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="text" pInputText formControlName="place" placeholder="Renseignez votre adresse mail" />
+                <div class="form-error">
+                    @if (estimateForm.get('place')?.errors?.['required'] && isFormSubmitted) {
+                    <span>Entrez l'adresse mail</span>
+                    }
+                </div>
+            </div>
+            <div class="field">
+                <label>Téléphone</label>
+                <input type="text" pInputText formControlName="place" placeholder="Renseignez votre téléphone" />
+                <div class="form-error">
+                    @if (estimateForm.get('place')?.errors?.['required'] && isFormSubmitted) {
+                    <span>Entrez l'adresse mail</span>
+                    }
+                </div>
+            </div>
+            <div class="field">
+                <label>Votre adresse mail</label>
+                <input type="text" pInputText formControlName="place" placeholder="Exemple: Rennes" />
+                <div class="form-error">
+                    @if (estimateForm.get('place')?.errors?.['required'] && isFormSubmitted) {
+                    <span>Entrez l'adresse mail</span>
+                    }
+                </div>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>

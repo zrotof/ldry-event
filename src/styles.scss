@@ -1,5 +1,5 @@
-@import "primeicons/primeicons.css";
-@import "variables.scss";
+@import url("primeicons/primeicons.css");
+@import url("variables.scss");
 
 @layer reset, primeng;
 
@@ -10,19 +10,18 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     font-family: "montserrat", sans-serif;
+    font-size: 1rem;
   }
 
   html {
     scroll-behavior: smooth;
-    font-size: 1rem;
   }
 
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .header-container
-   {
+  .header-container {
     max-width: 1400px;
     padding: 0 1rem;
   }
@@ -41,33 +40,33 @@
     text-decoration: none;
   }
 
-  .Facebook{
-    &:hover{
-      a{
-        color: #1877F2 !important;      
+  .Facebook {
+    &:hover {
+      a {
+        color: #1877F2 !important;
       }
     }
   }
 
-  .Instagram{
-    &:hover{
-      a{      
+  .Instagram {
+    &:hover {
+      a {
         color: #E1306C !important;
       }
     }
   }
 
-  .Youtube{
-    &:hover{
-      a{      
+  .Youtube {
+    &:hover {
+      a {
         color: #FF0000 !important;
       }
     }
   }
 
-  .Whatsapp{
-    &:hover{
-      a{      
+  .Whatsapp {
+    &:hover {
+      a {
         color: green !important;
       }
     }

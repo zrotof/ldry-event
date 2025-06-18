@@ -1,0 +1,22 @@
+<div class="packs">
+    <div class="content my-container">
+        <h1>Nos packs DJ clés en main</h1>
+        <p>Offrez à votre événement l’ambiance qu’il mérite grâce à nos packs DJ sur mesure. Mariage, anniversaire, soirée privée ou événement d’entreprise — chaque formule est pensée pour répondre à vos besoins spécifiques, avec du matériel professionnel, un DJ expérimenté, et des options personnalisables. Découvrez le pack qui fera vibrer votre moment.</p>
+        <div class="pack-list">
+            @for (pack of packs; track $index) {
+            <div class="pack">
+                <div class="top">
+                    <h3> {{pack.title}} </h3>
+                    <p> {{pack.description}} </p>
+                    <ul>
+                        @for (include of pack.includes; track $index) {
+                        <li> {{include}} </li>
+                        }
+                    </ul>
+                </div>
+                <button>Réserver ce pack</button>
+            </div>
+            }
+        </div>
+    </div>
+</div>

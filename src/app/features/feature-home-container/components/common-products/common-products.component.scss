@@ -1,0 +1,80 @@
+.common-products {
+    display: flex;
+    justify-content: center;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+
+        h2 {
+            text-align: center;
+            max-width: 500px;
+            font-weight: 900;
+            font-size: 3rem;
+            line-height: 3rem;
+            letter-spacing: -1px;
+            color: var(--project-green-secondary-color);
+        }
+
+        p {
+            color: var(--project-green-tertiary-color);
+            font-size: 1rem;
+            max-width: 800px;
+            text-align: center;
+            line-height: 1.5rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+
+            .product {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .image-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 300px;
+                    border: 2px solid var(--project-green-tertiary-color);
+
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                    color: var(--project-green-tertiary-color);
+                }
+            }
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 100px;
+            letter-spacing: 1px;
+            width: fit-content;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            font-weight: 600;
+            background-color: var(--project-green-secondary-color);
+            color: var(--project-green-primary-color);
+
+            &:hover {
+                background-color: var(--project-green-primary-color);
+                color: var(--project-white-primary-color);
+            }
+        }
+    }
+}

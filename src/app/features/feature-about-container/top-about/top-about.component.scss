@@ -1,0 +1,41 @@
+.top-about {
+    display: flex;
+    justify-content: center;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 3rem;
+
+        .title-bloc {
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+            width: 100%;
+
+            h2 {
+                font-weight: 900;
+                font-size: 3rem;
+                max-width: 500px;
+                line-height: 3rem;
+                letter-spacing: -1px;
+                color: var(--project-green-secondary-color);
+            }
+
+            p {
+                width: 500px;
+                line-height: 1.7rem;
+                color: var(--project-green-tertiary-color);
+            }
+        }
+
+        img {
+            object-fit: cover;
+            max-width: 100%;
+            width: 100%;
+            height: fit-content;
+        }
+    }
+}

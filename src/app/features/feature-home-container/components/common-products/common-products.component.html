@@ -1,0 +1,17 @@
+<div class="common-products">
+    <div class="content my-container">
+        <h2>Nos équipements les plus loués</h2>
+        <p>Performants, fiables et prêts à sublimer vos soirées : voici les incontournables de notre catalogue d'équipements disponible à la location </p>
+        <div class="products">
+            @for (product of products; track $index) {
+            <div class="product">
+                <div class="image-wrapper">
+                    <img [ngSrc]="product.image" alt="" fill>
+                </div>
+                <h3> {{product.name}} </h3>
+            </div>
+            }
+        </div>
+        <button routerLink="/nos-equipements">Voir tous nos équipements</button>
+    </div>
+</div>

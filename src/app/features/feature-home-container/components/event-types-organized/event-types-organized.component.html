@@ -1,0 +1,15 @@
+<div class="event-types-organized">
+    <div class="content my-container">
+        <h2>Les types d'évènements que nous couvrons</h2>
+        <p>Chaque événement est une histoire à raconter. Nous orchestrons vos moments d’exception avec élégance, créativité et précision, pour qu’ils restent gravés dans les mémoires.</p>
+        <div class="event-types">
+            @for (eventType of eventTypes; track $index) {
+            <div class="event-type">
+                <img [ngSrc]="eventType.image" width="250" height="250">
+                <span> {{eventType.name}} </span>
+            </div>
+            }
+        </div>
+        <button routerLink="/devis-gratuit">Obtenez un devis gratuit</button>
+    </div>
+</div>
