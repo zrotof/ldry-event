@@ -1,0 +1,18 @@
+<div class="faqs">
+    <div class="content my-container">
+        <h2>Questions fréquentes sur nos prestations DJ</h2>
+        <p>Vous avez une question sur nos packs ou notre façon de travailler ? Voici les réponses aux interrogations que
+            nos clients nous posent le plus souvent. Si vous ne trouvez pas votre réponse ici, n’hésitez pas à nous
+            contacter directement !</p>
+
+        <p-accordion [activeIndex]="0" expandIcon="pi pi-angle-down" collapseIcon=" pi pi-angle-up">
+            @for (tab of tabs; track $index) {
+            <p-accordionTab [header]="tab.question">
+                <p>
+                    {{ tab.answer }}
+                </p>
+            </p-accordionTab>
+            }
+        </p-accordion>
+    </div>
+</div>

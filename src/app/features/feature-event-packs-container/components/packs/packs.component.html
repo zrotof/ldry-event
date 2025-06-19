@@ -4,7 +4,7 @@
         <p>Offrez à votre événement l’ambiance qu’il mérite grâce à nos packs DJ sur mesure. Mariage, anniversaire, soirée privée ou événement d’entreprise — chaque formule est pensée pour répondre à vos besoins spécifiques, avec du matériel professionnel, un DJ expérimenté, et des options personnalisables. Découvrez le pack qui fera vibrer votre moment.</p>
         <div class="pack-list">
             @for (pack of packs; track $index) {
-            <div class="pack">
+            <div class="pack" [class.isRecommended]="pack.isRecommended">
                 <div class="top">
                     <h3> {{pack.title}} </h3>
                     <p> {{pack.description}} </p>

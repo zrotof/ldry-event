@@ -1,0 +1,49 @@
+.faqs {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+
+        h2 {
+            text-align: center;
+            max-width: 500px;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            font-weight: 900;
+            color: var(--project-green-secondary-color);
+        }
+
+        >p {
+            text-align: center;
+            line-height: 1.5rem;
+            max-width: 800px;
+            font-size: 1rem;
+            color: var(--project-green-tertiary-color);
+        }
+
+        p-accordion {
+            margin-top: 3rem;
+
+            .p-accordionpanel {
+                .p-accordionheader {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    background: #c5cebf;
+                    color: var(--project-black-primary-color);
+                }
+            }
+
+            .p-accordionpanel:not(.p-disabled).p-accordionpanel-active>.p-accordionheader {
+                background: var(--project-green-secondary-color);
+            }
+        }
+    }
+}

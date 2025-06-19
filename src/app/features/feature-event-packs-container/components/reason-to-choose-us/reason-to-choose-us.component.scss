@@ -1,0 +1,63 @@
+.reason-to-choose-us {
+    display: flex;
+    justify-content: center;
+
+    .content {
+        display: flex;
+        gap: 3rem;
+        width: 100%;
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            flex: 1;
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 900;
+                line-height: 2.5rem;
+                color: var(--project-green-secondary-color);
+                max-width: 500px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: var(--project-white-primary-color)
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 2rem;
+
+                li {
+                    display: flex;
+                    gap: 1rem;
+                    color: var(--project-white-tertiary-color);
+
+                    i{
+                        font-size: 1.2rem;
+                        color: var(--project-green-secondary-color);
+                    }
+                }
+            }
+        }
+
+        .image-wrapper {
+            position: relative;
+            height: 32rem;
+            flex: 1;
+            width: 100%;
+            border-radius: 1rem;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                object-position: top center;
+            }
+        }
+    }
+}
