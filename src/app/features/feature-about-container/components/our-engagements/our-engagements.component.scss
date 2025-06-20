@@ -1,0 +1,63 @@
+.our-engagements {
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+
+            .first-one{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--project-green-primary-color);
+                border: none;
+
+                h3{
+                    font-size: 2rem;
+                    font-weight: 900;
+                }
+            }
+
+            li {
+                color: var(--project-green-tertiary-color);
+                padding: 1rem 1rem 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                border: 1px solid #3a3e37;
+                border-radius: 1rem;
+                background-color: #201f1f;
+
+                .icon-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 0.5rem;
+                    padding: 0.2rem;
+                    background-color: var(--project-green-secondary-color);
+                    margin-bottom: 3rem;
+
+                    i {
+                        font-size: 1.5rem;
+                        color: var(--project-black-primary-color);
+                    }
+                }
+
+                p {
+                    font-size: 0.95rem;
+                    line-height: 1.4rem;
+                    color: var(--project-white-tertiary-color);
+                }
+            }
+        }
+    }
+}

@@ -16,12 +16,17 @@
             width: 100%;
 
             h2 {
-                font-weight: 900;
-                font-size: 3rem;
-                max-width: 500px;
-                line-height: 3rem;
-                letter-spacing: -1px;
-                color: var(--project-green-secondary-color);
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    font-weight: 900;
+                    font-size: 3rem;
+                    max-width: 600px;
+                    line-height: 3rem;
+                    letter-spacing: -1px;
+                    color: var(--project-green-secondary-color);
+                }
             }
 
             p {

@@ -1,0 +1,19 @@
+<div class="our-engagements">
+    <div class="content my-container">
+        <ul>
+            <li class="first-one">
+                <img ngSrc="/img/logo/logo.png" width="120" height="120">
+                <h3>Notre engagement</h3>
+            </li>
+            @for (engagement of engagements; track $index) {
+                <li>
+                    <div class="icon-wrapper">
+                        <i [class]="engagement.icon"></i>
+                    </div>
+                    <h4> {{engagement.title}} </h4>
+                    <p>{{engagement.description}}</p>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

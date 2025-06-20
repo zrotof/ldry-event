@@ -1,4 +1,8 @@
 .feature-about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
     padding-top: 12rem;
+    padding-bottom: 5rem;
     background-color: var(--project-black-primary-color);
-}
+} 
